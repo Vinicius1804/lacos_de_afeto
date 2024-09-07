@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ;
+    background-color: #FFE5F8;
+}
+
+.Containerz{
+    text-align: center;
+    padding: 30px;
+}
+
+h1{
+    color: #1376FF;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.partners{
+    margin-top: 200px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#estrela{
+    background-color: #FFED00;
+}
+
+#passos{
+    background-color: #0E2A8E;
+}
+
+#Santarder{
+    background-color: red;
+}
+
+.partners img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
