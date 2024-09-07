@@ -4,52 +4,108 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: sans-serif;
     background-color: #FFE5F8;
 }
 
-.Containerz{
+.section-p{
+    width: 100%;
+    height: 100vh;
+}
+
+.Containerz {
     text-align: center;
     padding: 30px;
 }
 
-h1{
+h1 {
     color: #1376FF;
     font-size: 3em;
     margin-top: 20px;
 }
 
-.partners{
-    margin-top: 200px;
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
-    gap: 20px;
+.partners-container{
+    background-color: white;
+    padding: 20px;
+    height: 250px;
 }
 
-.partners img{
-    width: 150px;
+.partners-container {
+    overflow: hidden; /* Isso garante que as imagens que saem da tela não fiquem visíveis */
+    margin-top: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização comum para todas as imagens */
+.partners img {
+    width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
+    margin-right: 30px; /* Espaço entre as imagens */
 }
 
-#estrela{
+/* Especificações de cores */
+#estrela {
     background-color: #FFED00;
 }
 
-#passos{
+#passos {
     background-color: #0E2A8E;
 }
 
-#Santarder{
+#Santarder {
     background-color: red;
 }
 
-.partners img:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+/* Primeira linha de imagens - movendo da esquerda para a direita */
+.partners-row1 {
+    display: flex;
+    justify-content: start;
+    animation: slideRight 8s linear infinite;
+    width: 100%; /* Garantir que ocupe toda a largura */
+}
+
+/* Segunda linha de imagens - movendo da direita para a esquerda */
+.partners-row2 {
+    display: flex;
+    justify-content: start;
+    animation: slideLeft 8s linear infinite;
+    width: 100%; /* Garantir que ocupe toda a largura */
+    margin-top: 20px;
+}
+
+/* Animação para mover da esquerda para a direita (row 1) */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Animação para mover da direita para a esquerda (row 2) */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
