@@ -35,13 +35,20 @@ h1{
     padding: 40px 80px 20px;
 }
 
-p{
-    font-size: 24px;
-    padding-left: 80px;
+.partners-container{
+    background-color: white;
+    padding: 30px;
+    height: 250px;
 }
 
-span{
-    color: #FF188A;
+.partners-container {
+    overflow: hidden; /* Isso garante que as imagens que saem da tela não fiquem visíveis */
+    margin-top: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .apoiar{
