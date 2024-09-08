@@ -27,13 +27,13 @@ h1 {
 
 .partners-container{
     background-color: white;
-    padding: 20px;
-    height: 250px;
+    padding: 30px;
+    height: 300px;
 }
 
 .partners-container {
     overflow: hidden; /* Isso garante que as imagens que saem da tela não fiquem visíveis */
-    margin-top: 200px;
+    margin-top: 300px;
     width: 100%;
     position: relative;
     display: flex;
@@ -43,7 +43,7 @@ h1 {
 
 /* Estilização comum para todas as imagens */
 .partners img {
-    width: 200px;
+    width: 60%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
