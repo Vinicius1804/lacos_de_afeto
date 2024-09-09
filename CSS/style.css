@@ -44,7 +44,7 @@ h1 {
 /* Estilização comum para todas as imagens */
 .partners img {
     width: 60%;
-    height: auto;
+    height: 90px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
