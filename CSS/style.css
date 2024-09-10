@@ -24,18 +24,18 @@ section .criar{
     width: 50%;
     padding: 10px;
     margin-top: 150px;
-    margin-left: 90px;
+    margin-left: 60px;
     border-radius: 20px;
 
 }
 
 h1{
-    font-size: 40px;
+    font-size: 36px;
     padding: 40px 80px 20px;
 }
 
 p{
-    font-size: 25px;
+    font-size: 24px;
     padding-left: 80px;
 }
 
@@ -59,8 +59,8 @@ span{
 
 .pessoa{
     max-width: 40%;
-    height: 450px;
-    margin-left: 870px;
+    height: 440px;
+    margin-left: 850px;
     margin-top: -900px;
     border-radius: 10px;
 }
