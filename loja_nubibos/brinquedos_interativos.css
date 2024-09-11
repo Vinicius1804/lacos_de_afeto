@@ -45,8 +45,32 @@
 .espaco-em-branco {
     width: 130px;
 }
+.nav_brinquedos {
+    width: 82%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 5px;
+    background-color: #002A64;
+    border-radius: 10px;
+}
 
-.navbar-expand-lg {}
+.nav_brinquedos>a{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.8s;
+}
+.nav_brinquedos>a:hover{
+    border-radius: 10px;
+    background-color: #1376FF;
+}
+#interativo{
+    background-color: #1376FF;
+    border-radius: 10px;   
+}
 
 #corpo {
     position: relative;
@@ -56,14 +80,16 @@
 
 }
 #imagem_topo{
-    background-image: url(loja_imagens/destaque-loja.png);
+    background-image: url(brinquedos_interativos_imagens/Destaque-loja\(Interativos\).png);
     width: 100%;
-    height: 528px;
-    margin-top: 100px;
+    height: 628px;
+    margin-top: 40px;
     margin-bottom: 50px;
+    border-radius: 24px;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .titulo_brinquedos{
     font-weight: 900;
     color: #002A64;
