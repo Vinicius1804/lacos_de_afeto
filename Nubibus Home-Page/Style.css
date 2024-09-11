@@ -56,7 +56,6 @@
 
 main{
     min-height: 900px;
-    background-color: #D5941D;
 }
 
 p{
@@ -73,6 +72,7 @@ p{
 }
 
 .containersec1, .containersec2, .containersec3{
+    position: static;
     display: flex;
     align-items: center;
     width: 100%;
@@ -80,6 +80,7 @@ p{
     min-height: 900px;
     background-color: #E3ECEA;
     font-size: 10vh;
+
 }
 
 .containersec2{
@@ -118,6 +119,8 @@ p{
     width: 304px;
 }
 
+
+
 #gratis:hover {
 
     width: 310px;
@@ -148,6 +151,10 @@ p{
 
 }
 
+.container-home-page{
+    /* position: absolute; */
+}
+
 .secao2  img{
     border: 7px solid #D5941D;
     width: 630px;
@@ -166,7 +173,80 @@ p{
     border-radius: 30px;
 }
 
+.nuvem {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+}
+.nuvem img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    
+    transform: translateY(0); 
+    transition: transform 0.2s ease-out; 
+}
 
+
+.dropPsicologo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 85px;
+    left: 690px;
+    width: 250px;
+    height: 200px;
+    border: 5px solid #1376FF;
+    background-color: #A1C8FF;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1vw;
+    text-align: center;
+    visibility: hidden; 
+}
+
+#camada1{
+    border-radius: 30px;
+}
+
+.dropPsicologo a{
+    color: #002A64;
+    text-decoration: none;
+    /* margin-top: 15px; */
+    margin: auto;
+}
+
+.dropApoie{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 85px;
+    left: 900px;
+    width: 250px;
+    height: 100px;
+    border: 5px solid #1376FF;
+    background-color: #A1C8FF;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1vw;
+    text-align: center;
+    visibility: hidden; 
+}
+
+.dropApoie a{
+    color: #002A64;
+    text-decoration: none;
+    margin: auto;
+    /* margin-top: 15px; */
+}
+
+#camada2{
+    border-radius: 30px;
+}
 
 
 

@@ -37,9 +37,9 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
                     <div class="navbar-nav">
                         <a href="" class="nav-item nav-link" id="quemsomos-menu">Quem somos</a>
-                        <a href="" class="nav-item nav-link" id="psicologos-menu">Psicólogos</a>
+                        <a href="" class="nav-item nav-link" id="psicologos-menu" onmouseover="show_camada1()" onmouseout="some_tudo()">Psicólogos</a>
                         <a href="" class="nav-item nav-link" id="parcerias-menu">Parcerias</a>
-                        <a href="" class="nav-item nav-link" id="apoie-menu">Apoie</a>
+                        <a href="" class="nav-item nav-link" id="apoie-menu" onmouseover="show_camada2()" onmouseout="some_tudo()">Apoie</a>
                         <a href="" class="nav-item nav-link" id="contato-menu">Contato</a>
                         <a href="" class="nav-item nav-link" id="loja-menu">Loja</a>
                         <a href="" class="nav-item nav-link" id="logincadastro-menu">Login / Cadastre - se</a>
@@ -50,7 +50,7 @@
     </header>
 
     <main>
-
+       
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -65,14 +65,12 @@
                             </div>
                         </section>
                         <section class="secao2">
-                            <img src="assents/familia-negra-vista-frontal-posando-no-estudio.jpg" alt="familia negra posando no estudio">
+                            <img src="assents/familia-negra-vista-frontal-posando-no-estudio.jpg"
+                                alt="familia negra posando no estudio">
                         </section>
-                        <!-- <div class="nuvem">
-                            <img class="nuvens" src="assents/Group 12.svg" alt="">
-                        </div> -->
                     </div>
                 </div>
-
+               
                 <!-- segundo container -->
                 <div class="carousel-item">
                     <div class="containersec2">
@@ -80,15 +78,14 @@
                             <p id="sec2">Atendimento Psicológico -</p>
                             <h1>Encontre apoio <br> e recursos<br>valiosos para <br> sua jornada.</h1>
                             <div class="section-dentro">
-                                <a href=""><img id="gratis" src="assents/Primeira grátis.svg" alt="botão de primeira sessão grátis"></a>
+                                <a href=""><img id="gratis" src="assents/Primeira grátis.svg"
+                                        alt="botão de primeira sessão grátis"></a>
                             </div>
                         </section>
                         <section class="secao-crianca">
-                            <img src="assents/plano-de-saude-para-autismo.webp" alt="Criança brincando com a mãe e seus brincos">
+                            <img src="assents/plano-de-saude-para-autismo.webp"
+                                alt="Criança brincando com a mãe e seus brincos">
                         </section>
-                        <!-- <div class="nuvem">
-                            <img class="nuvens" src="assents/Group 12.svg" alt="">
-                        </div> -->
                     </div>
                 </div>
 
@@ -105,15 +102,28 @@
                         <section class="secao-loja">
                             <img src="assents/Screenshot_1.png" alt="Crianca brincando com brinquedos quadriculados">
                         </section>
-                        <!-- <div class="nuvem">
-                            <img class="nuvens" src="assents/Group 12.svg" alt="">
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+        <div class="nuvem">
+            <img class="nuvens" src="assents/Group 12.svg" alt="Nuvens">
+        </div>
+        
+        <div id="camada1" class="dropPsicologo">
+            <a href="">Nossos Psicólogos</a>
+            <a href="">Primeira Consulta</a>
+            <a href="">Dúvidas</a>
+            <a href="">Depoimentos</a>
+        </div>
 
+        <div id="camada2" class="dropApoie">
+            <a href="">Contribuir</a>
+            <a href="">Parceiros</a>
+        </div>
+
+    </main>
+    <script src="javascriptb.js"></script>
 </body>
 
 </html>
