@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: #FFFFFF;
+}
+
+.navbar-p{
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #157A6E;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.navbar-p .logo-p img{
+    height: 50px;
+}
+
+.nubibos-name{
+    margin-right: 350px;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.login-button{
+    font-size: 20px;
+    background-color: #D5941D;
+    border: none;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.login-button:hover{
+    background-color: #FFFFFF;
+    color: #D5941D;
+}
+
+.carousel2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+}
+
+.arrow-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev{
+    left: 10px;
+}
+
+#next{
+    right: 10px;
+}
+.arrow-button img{
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.arrow-button:hover img {
+    transform: scale(1.2);
+}
+
+.cardss{
+    display: flex;
+    overflow: hidden;
+    width: 66%;
+    justify-content: center;
+    transition: transform 0,5s ease-in-out;
+    gap: 10px;
+}
+
+.cards{
+        flex-shrink: 0;
+        width: 250px;
+        margin: 0 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.5 ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* garantir que o conteúdo do card fique centralizado */
+        align-items: center;
+        transition: all 0.5s ease;
+}
+
+.cards.central {
+    transform: scale(1.1);
+    width: 300px;
+}
+
+.cards img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    height: 100%;
+    background-color: rgba(21, 122, 110, 0.9); /* Ajustar o tom de verde */
+    color: #FFFFFF;
+    padding: 60px;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 10px;
+    display: none; /* Continua oculto até hover */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards.central .card-content {
+    display: block;
+}
+
+.cards:hover .card-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cards.central:hover{
+    transform: scale(1.15);
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.card-content .agendar {
+    width: 80%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-content button:hover {
+    background-color: #ffca28;
+}
