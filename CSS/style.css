@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Nunito", sans-serif;
     background-color: #FFE5F8;
     color: white;
@@ -30,9 +30,10 @@ section .criar{
 
 }
 
-h1{
-    font-size: 36px;
-    padding: 40px 80px 20px;
+h1 {
+    color: #1376FF;
+    font-size: 64px;
+    margin-top: 20px;
 }
 
 .partners-container{
