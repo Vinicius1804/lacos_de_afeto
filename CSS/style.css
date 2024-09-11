@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Nunito", sans-serif;
     background-color: #FFE5F8;
 }
 
@@ -21,7 +21,7 @@ body {
 
 h1 {
     color: #1376FF;
-    font-size: 3em;
+    font-size: 64px;
     margin-top: 20px;
 }
 
@@ -41,7 +41,6 @@ h1 {
     align-items: center;
 }
 
-/* Estilização comum para todas as imagens */
 .partners img {
     width: 60%;
     height: 90px;
@@ -51,7 +50,7 @@ h1 {
     margin-right: 30px; /* Espaço entre as imagens */
 }
 
-/* Especificações de cores */
+
 #estrela {
     background-color: #FFED00;
 }
