@@ -97,7 +97,7 @@
 .faca_diferenca{
     height: 528px;
     background-color: black;
-    margin-top: 40px;
+    margin-top: 100px;
     background-image: url(Frame\ 4.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,7 +111,9 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(255, 167, 43, 0.89), rgba(0, 0, 0, 0.4));
+    background-image: url(loja_imagens/background_amarelo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .faca_diferenca h1{
     font-size: 2em;
