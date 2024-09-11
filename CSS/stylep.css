@@ -88,8 +88,8 @@ body{
     align-items: center;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    color: #157A6E; /* Cor verde da navbar */
+.swiper-button-next .swiper-button-prev {
+    color: #157A6E;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
