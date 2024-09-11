@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -93,7 +94,7 @@
     </div>
 </section>
 
-<section-c>
+<section class="section-c">
     <div class="containerr">
         <h1>Principais dúvidas:</h1>
 
@@ -120,11 +121,59 @@
     </div>
 </section>
 
-<section class="comentários">
-
-    <div class="container-r">
-        <h1>Depoimentos:</h1>
+<section class="section-coment">
+    <h2>Depoimentos:</h2>
+    <div class="container-n">
+        <div class="carousel" id="testimonial-carousel">
+            <div class="cardz">
+                <img src="img-psicologos/sofia.svg" alt="Sofia Almeida">
+                <h3>Sofia Almeida</h3>
+                <div class="stars">★★★★★</div>
+                <p>"O serviço foi excelente, e eu definitivamente recomendaria! Profissionais dedicados e atenciosos."</p>
+            </div>
+            <div class="cardz">
+                <img src="img-psicologos/lucas.svg" alt="Lucas Ferreira">
+                <h3>Lucas Ferreira</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Uma experiência incrível do começo ao fim. Muito satisfeito com a atenção dada a todos os detalhes."</p>
+            </div>
+            <div class="cardz">
+                <img src="img-psicologos/Mariana.svg" alt="Mariana Costa">
+                <h3>Mariana Costa</h3>
+                <div class="stars">★★★★★</div>
+                <p>"A equipe foi muito atenciosa e prestativa. Recomendo a todos que buscam um serviço de qualidade."</p>
+            </div>
+            <div class="cardz">
+                <img src="img-psicologos/Gustavo.svg" alt="Gustavo Nogueira">
+                <h3>Gustavo Nogueira</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Gostei bastante, embora ache que o processo poderia ser um pouco mais rápido. No geral, estou satisfeito."</p>
+            </div>
+            <div class="cardz">
+                <img src="img-psicologos/Ana.svg" alt="Ana Costa">
+                <h3>Ana Costa</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Excelente atendimento e execução. Superou todas as minhas expectativas. Parabéns à equipe!"</p>
+            </div>
+            <div class="cardz">
+                <img src="img-psicologos/Paulo.svg" alt="Paulo Ribeiro">
+                <h3>Paulo Ribeiro</h3>
+                <div class="stars">★★★★★</div>
+                <p>"Bom trabalho, mas tive alguns pequenos problemas de comunicação. No entanto, o resultado final foi ótimo."</p>
+            </div>
+            <div class="cardz">
+                <img src="img-psicologos/Camila.svg" alt="Camila Ribeiro">
+                <h3>Camila Ribeiro</h3>
+                <div class="stars">★★★★★</div>
+                <p>"A equipe é incrível! Muito atenciosa e sempre pronta para ajudar. Fiquei muito satisfeita com o resultado."</p>
+            </div>
+        </div>
+        <div class="prev" id="prev-btn">&#10094;</div>
+        <div class="next" id="next-btn">&#10095;</div>
     </div>
+</section>
+<section class="section-step">
+    <img src="img-psicologos/meninoesenhora.svg" alt="">
 
 </section>
 
@@ -162,6 +211,50 @@
                 }
             });
         }
+        //script depoimentos
+        const carousel = document.querySelector('.carousel');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let isDragging = false;
+        let startX, scrollLeft;
+
+        carousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+        });
+
+        carousel.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            carousel.scrollLeft = scrollLeft - (e.pageX - carousel.offsetLeft - startX);
+        });
+
+        carousel.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        carousel.addEventListener('scroll', () => {
+            if (carousel.scrollLeft === 0) {
+                prevBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'block';
+            }
+
+            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
+                nextBtn.style.display = 'none';
+            } else {
+                nextBtn.style.display = 'block';
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollLeft -= 280; // Largura do card + margens
+        });
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollLeft += 280; // Largura do card + margens
+        });
     </script>
 </body>
 </html>
