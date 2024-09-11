@@ -59,7 +59,7 @@ main{
 }
 
 p{
-    font-size: 2.2vw;
+    font-size: 1.2vw;
     font-weight: bold; 
 }
 
@@ -77,9 +77,9 @@ p{
     align-items: center;
     width: 100%;
     justify-content: center;
-    min-height: 900px;
+    min-height: 698px;
     background-color: #E3ECEA;
-    font-size: 10vh;
+    font-size: 9vh;
 
 }
 
@@ -98,19 +98,19 @@ p{
 }
 
 .secao1 h1{
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     color: #1376FF;
     font-weight: bold; 
 }
 
 .secao21 h1{
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     color: #FF5AD1;
     font-weight: bold; 
 }
 
 .secao11 h1{
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     color: #FFA62B;
     font-weight: bold; 
 }
@@ -175,7 +175,7 @@ p{
 
 .nuvem {
     position: absolute;
-    top: 800px;
+    top: 600px;
     left: 0;
     width: 100%;
     z-index: 10; 
