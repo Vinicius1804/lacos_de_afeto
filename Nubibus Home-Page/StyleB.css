@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: font1;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+.navbar{
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    background-color: #1376ff;
+}
+
+.navbar .navbar-expand-lg{
+
+}
+
+.row{
+    margin: 0;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+
+#logincadastro-menu{
+    background-color: #D5941D;
+    border-radius: 10px;
+    margin-left: 92px;
+}
+
+#navbar-links a{
+    color: #fff;
+}
+
+#navbar-links a:hover{
+    color: #083b83;
+}
+
+.espaco-em-branco{
+    width: 130px;
+}
+
+.navbar-expand-lg {
+  
+}
+
+main{
+    min-height: 900px;
+    background-color: #D5941D;
+}
+
+p{
+    font-size: 2.2vw;
+    font-weight: bold; 
+}
+
+#sec2{
+    color: #7B175F;
+}
+
+#sec3{
+    color: #795107;
+}
+
+.containersec1, .containersec2, .containersec3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    min-height: 900px;
+    background-color: #E3ECEA;
+    font-size: 10vh;
+}
+
+.containersec2{
+    background-color: #FFE5F8;
+}
+
+.containersec3{
+    background-color: #FFF6E9;
+}
+
+.secao1, .secao21{
+    font-size: 5rem;
+    width: 45%;
+    margin-left: 150px;
+}
+
+.secao1 h1{
+    font-size: 4.5vw;
+    color: #1376FF;
+    font-weight: bold; 
+}
+
+.secao21 h1{
+    font-size: 4.5vw;
+    color: #FF5AD1;
+    font-weight: bold; 
+}
+
+.secao11 h1{
+    font-size: 4.5vw;
+    color: #FFA62B;
+    font-weight: bold; 
+}
+
+#gratis {
+    width: 304px;
+}
+
+#gratis:hover {
+
+    width: 310px;
+    transition: all 0.5s;
+}
+
+
+.section-dentro img{
+    width: 190px;
+}
+.section-dentro img:hover{
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.conhecer{
+    font-weight: bold; 
+    margin-left: -86px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.secao2, .secao-loja, .secao-crianca {
+    display: flex;
+    justify-content: end;
+    width: 45%;
+    margin-right: 150px;
+
+}
+
+.secao2  img{
+    border: 7px solid #D5941D;
+    width: 630px;
+    border-radius: 30px;
+}
+
+.secao-loja img{
+    border: 7px solid #FF69B3;
+    width: 630px;
+    border-radius: 30px;
+}
+
+.secao-crianca  img{
+    border: 7px solid #1376FF;
+    width: 630px;
+    border-radius: 30px;
+}
+
+
+
+
+
