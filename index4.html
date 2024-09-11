@@ -27,7 +27,7 @@
     </nav>
 
 
-    <section>
+<section class="sectio-m">
     <div class="tituloo">
         <h1>Primeira Sessão Grátis</h1>
         <p>Conecte-se com Nossos Psicólogos e Inicie o Apoio Especializado</p>
@@ -91,7 +91,42 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-    
+</section>
+
+<section-c>
+    <div class="containerr">
+        <h1>Principais dúvidas:</h1>
+
+        <button class="accordion">Como os profissionais desse site, podem ajudar a promover habilidades de vida independente para pessoas com espectro autista?</button>
+        <div class="panel">
+            <p>Desenvolvemos planos de tratamento individualizados, Utilizando métodos de ensino adaptados às necessidades e orientando os pais e cuidadores sobre como apoiar e incentivar a independência em casa e na comunidade.</p>
+        </div>
+
+        <button class="accordion">Quais são as abordagens terapêuticas mais eficazes para crianças com autismo e como elas são escolhidas?</button>
+        <div class="panel">
+            <p>Existem várias abordagens terapêuticas para crianças com espectro autista, e a escolha da abordagem mais adequada pode depender das necessidades específicas de cada criança, bem como de seus pontos fortes e desafios.</p>
+        </div>
+
+        <button class="accordion">Como os pais e cuidadores podem ser envolvidos no processo terapêutico?</button>
+        <div class="panel">
+            <p>É crucial para garantir o sucesso das intervenções e o desenvolvimento contínuo da criança, e é possível criar um ambiente de apoio e maior suporte.</p>
+        </div>
+
+        <button class="accordion">O diagnóstico de autismo pode mudar ao longo do tempo? Se sim, como e por quê?</button>
+        <div class="panel">
+            <p>Sim, o diagnóstico de autismo pode mudar ao longo do tempo, conforme a criança cresce e alguns comportamentos podem se tornar menos evidentes, enquanto novos desafios podem surgir.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="comentários">
+
+    <div class="container-r">
+        <h1>Depoimentos:</h1>
+    </div>
+
+</section>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -111,6 +146,22 @@
                 slideShadows: false,
             },
         });
+
+        //script principais duvidas
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     </script>
 </body>
 </html>
