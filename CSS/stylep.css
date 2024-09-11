@@ -60,6 +60,19 @@ body{
     color: #D5941D;
 }
 
+.tituloo h1{
+    text-align: center;
+    font-size: 64px;
+    color: #157A6E;
+}
+
+.tituloo p{
+    text-align: center;
+    font-size: 24px;
+    color: #157A6E;
+
+}
+
 .carousel2{
     width: 100%;
     display: flex;
@@ -108,21 +121,14 @@ body{
 
 .cards{
         flex-shrink: 0;
-        width: 250px;
+        width: 300px;
         margin: 0 10px;
         border-radius: 10px;
         overflow: hidden;
-        transition: transform 0.5 ease;
+        transition: transform 0.3 ease;
         display: flex;
         flex-direction: column;
         align-items: center; /* garantir que o conteúdo do card fique centralizado */
-        align-items: center;
-        transition: all 0.5s ease;
-}
-
-.cards.central {
-    transform: scale(1.1);
-    width: 300px;
 }
 
 .cards img{
@@ -144,18 +150,10 @@ body{
     width: 100%;
 }
 
-.cards.central .card-content {
-    display: block;
-}
-
 .cards:hover .card-content {
     display: block;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-}
-
-.cards.central:hover{
-    transform: scale(1.15);
 }
 
 .cards:hover {

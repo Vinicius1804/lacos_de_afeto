@@ -26,6 +26,11 @@
         <button class="login-button">Login/cadastre-se</button>
     </nav>
 
+    <div class="tituloo">
+        <h1>Primeira Sessão Grátis</h1>
+        <p>Conecte-se com Nossos Psicólogos e Inicie o Apoio Especializado</p>
+    </div>
+
     <div class="carousel2">
         <button id="prev" class="arrow-button" >
             <img src="img-psicologos/setaleft.svg" alt="Seta esquerda">
@@ -85,34 +90,21 @@
     </div>
 
     <script>
-const prevButton = document.getElementById('prev');
+    const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
-const cardsContainer = document.getElementById('card-container');
-const cards = document.querySelectorAll('.cards');
+const cardsContainer = document.getElementById('card-container'); // ID correto
 
-let currentIndex = 1; // índice inicial para o card central
-
-function updateCarousel() {
-    cards.forEach((card, index) => {
-        card.classList.remove('central');
-        const position = index - currentIndex;
-        card.style.transform = translateX(${position * 300}px);
-    });
-
-    cards[currentIndex].classList.add('central');
-}
+let currentPosition = 0;
 
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-    updateCarousel();
+    currentPosition += 300; // Move para a esquerda
+    cardsContainer.style.transform = `translateX(${currentPosition}px)`;
 });
 
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % cards.length;
-    updateCarousel();
+    currentPosition -= 300; // Move para a direita
+    cardsContainer.style.transform = `translateX(${currentPosition}px)`;
 });
-
-updateCarousel();
     </script>
 </body>
 </html>
