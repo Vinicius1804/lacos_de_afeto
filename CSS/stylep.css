@@ -28,6 +28,9 @@ body{
     height: 50px;
 }
 
+.swiper-wrapper{
+    overflow: hidden;
+}
 .nubibos-name{
     margin-right: 350px;
     margin-bottom: 5px;
