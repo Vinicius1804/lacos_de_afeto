@@ -22,6 +22,7 @@ section .criar{
 .box-pink{
     background-color: #ff83dc;
     width: 50%;
+    float: left;
     padding: 10px;
     margin-top: 150px;
     margin-left: 60px;
@@ -59,9 +60,9 @@ span{
 
 .pessoa{
     max-width: 40%;
-    height: 440px;
-    margin-left: 850px;
-    margin-top: -900px;
+    margin-left: 20px;
+    height: 420px;
+    margin-top: 150px;
     border-radius: 10px;
 }
 
