@@ -69,6 +69,7 @@ body{
 .tituloo p{
     text-align: center;
     font-size: 24px;
+    margin-bottom: 30px;
     color: #157A6E;
 
 }
@@ -81,6 +82,18 @@ body{
     padding: 20px;
     gap: 10px;
     position: relative;
+}
+
+.swiper-slide{
+    align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #157A6E; /* Cor verde da navbar */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #D5941D; /* Cor de destaque quando o botão for sobreposto */
 }
 
 .arrow-button{
@@ -122,7 +135,7 @@ body{
 .cards{
         flex-shrink: 0;
         width: 300px;
-        margin: 0 10px;
+        margin: 0 80px;
         border-radius: 10px;
         overflow: hidden;
         transition: transform 0.3 ease;
@@ -167,5 +180,6 @@ body{
 }
 
 .card-content button:hover {
+    background-image: ("");
     background-color: #ffca28;
 }
