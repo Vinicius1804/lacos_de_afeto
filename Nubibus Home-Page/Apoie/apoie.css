@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: font1;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(../Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+.navbar{
+    width: 77%;
+    height: 70px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    background-color: #FF69B3;
+    justify-content: space-between;
+}
+
+.navbar a{
+    margin-right: 40px;
+}
+
+
+.row{
+    margin: 0;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+
+#logincadastro-menu{
+    background-color: #B72D71;
+    border-radius: 10px;
+    margin-left: 92px;
+}
+
+#navbar-links a{
+    color: #fff;
+}
+
+#navbar-links a:hover{
+    color: #083b83;
+}
+
+.mainApoio{
+    position: relative;
+    width: 100%;
+    height: 1900px;
+    /* background-color: aqua; */
+}
+
+.containerApoie{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    /* background-color: #083b83; */
+}
+
+.container-destaque{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    /* background-color: #a4b0c2; */
+}
+
+.container-destaque img{
+    position: absolute;
+    width: 1300px;
+    height: 500px;
+}
+
+.container-secao{
+    text-align: center;
+    margin-top: 250px;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+
+h1{
+    color: #B72D71;
+    font-weight: bold;
+}
+
+.container-rosa{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quadrado-rosa{
+    align-items: center;
+    color: #fff;
+    margin: auto;
+    width: 15%;
+    height: 270px;
+    border-radius: 24px;
+    background-color: #FF5AD1;
+    font-size: 1vw;
+}
+
+.quadrado-rosa img{
+    margin-top: 10px;
+}
+
+.quadrado-rosa:hover{
+    transition: 0.5 s;
+    background-color: #B72D71;
+}
+
+.container-secao2{
+    margin-top: 100px;
+    /* justify-content: center; */
+    width: 100%;
+    height: 350px;
+}
+
+.container-secao2 h1{
+    text-align: center;
+}
+
+.container-retangulo{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 550px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.retangulo-apoio{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 24px;
+    height: 150px;
+    background-color: #B72D71;
+    gap: 10px;
+    flex-direction: row;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1vw;
+}
+
+
+.retangulo-apoio img{
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.retangulo-apoio button{
+    width: 200px;
+    height: 50px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    background-color: #FFA62B;
+}
+
+.retangulo-apoio a{
+    text-decoration: none;
+    color: white;
+} 
+
+.retangulo-apoio button:hover{
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.retangulo-apoio a:hover{
+    transition: 0.5s;
+    color: #B72D71;
+}
+
+.apoio-imagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apoio-imagem p{
+    display: flex;
+    text-align: center;
+    font-size: 2vw;
+    z-index: 2;
+    color: #fff;
+}
+
+.apoioImg{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+
+.apoio-imagem button{
+    width: 400px;
+    height: 100px;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    background-color: #FFA62B;
+    z-index: 2;
+}
+
+.apoio-imagem a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.dropPsicologo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 85px;
+    left: 70vh;
+    width: 250px;
+    height: 200px;
+    border: 5px solid #FF3297;
+    background-color: #FCC0DE;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1vw;
+    text-align: center;
+    visibility: hidden; 
+    transition: all 5s ease;
+}
+
+#camada1{
+    border-radius: 24px;
+}
+
+.dropPsicologo a{
+    color: #002A64;
+    text-decoration: none;
+    /* margin-top: 15px; */
+    margin: auto;
+}
+
+/* FOOTER DO VINI */
+
+footer{
+    margin-top: 500px;
+    height: auto;
+    font-family: "Nunito", sans-serif;
+    background-color: #1376FF;
+    color: white;
+}
+
+#container_footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container_footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_footer{
+    padding-top: 40px;
+    padding-bottom: 12px;    
+    font-weight: 700;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+i{
+    padding-bottom: 3px;
+    font-size: 0.5rem;
+}
+#logo_nubibos_footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.36rem;
+}
+#redes>.icones_redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#redes a{
+    margin-top: 10px;
+
+}
+.imgFooter{
+   width: 30px; 
+}
+#logo_nubibos_footer{
+    padding: 15px;
+}
+#logo_nubibos_footer>img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+#logo_nubibos_footer>p{
+    font-size: 0.6rem;
+}

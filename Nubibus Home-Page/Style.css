@@ -10,17 +10,13 @@
 }
 
 .navbar{
-    width: 70%;
+    width: 72%;
     height: 70px;
     margin: auto;
     margin-top: 10px;
     font-size: 1.2vw;
     border-radius: 10px;
     background-color: #1376ff;
-}
-
-.navbar .navbar-expand-lg{
-
 }
 
 .row{
@@ -59,7 +55,7 @@ main{
 }
 
 p{
-    font-size: 1.2vw;
+    font-size: 2.2vw;
     font-weight: bold; 
 }
 
@@ -77,9 +73,9 @@ p{
     align-items: center;
     width: 100%;
     justify-content: center;
-    min-height: 698px;
+    min-height: 760px;
     background-color: #E3ECEA;
-    font-size: 9vh;
+    font-size: 10vh;
 
 }
 
@@ -98,19 +94,19 @@ p{
 }
 
 .secao1 h1{
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: #1376FF;
     font-weight: bold; 
 }
 
 .secao21 h1{
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: #FF5AD1;
     font-weight: bold; 
 }
 
 .secao11 h1{
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: #FFA62B;
     font-weight: bold; 
 }
@@ -175,7 +171,7 @@ p{
 
 .nuvem {
     position: absolute;
-    top: 600px;
+    top: 700px;
     left: 0;
     width: 100%;
     z-index: 10; 
@@ -186,7 +182,6 @@ p{
     left: 0;
     width: 100%;
     height: auto;
-    
     transform: translateY(0); 
     transition: transform 0.2s ease-out; 
 }
@@ -207,11 +202,10 @@ p{
     font-size: 1vw;
     text-align: center;
     visibility: hidden; 
-    transition: 10s;
 }
 
 #camada1{
-    border-radius: 30px;
+    border-radius: 24px;
 }
 
 .dropPsicologo a{
@@ -226,7 +220,7 @@ p{
     display: flex;
     flex-direction: column;
     top: 85px;
-    left: 95vh;
+    left: 88vh;
     width: 250px;
     height: 100px;
     border: 5px solid #1376FF;
@@ -243,6 +237,10 @@ p{
     text-decoration: none;
     margin: auto;
     /* margin-top: 15px; */
+}
+
+.dropApoie a:hover{
+    font-weight: bold;
 }
 
 #camada2{
