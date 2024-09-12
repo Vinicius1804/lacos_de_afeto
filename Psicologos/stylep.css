@@ -18,31 +18,11 @@ body{
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 
-.navbar-p{
-    position: fixed;
-    width: 100%;
-    max-width: 1200px;
-    height: 60px;
-    top: 20px;
-    left: 150px;
-    display: flex;
-    margin: 20px auto;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #157A6E;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    border-radius: 10px;
-    z-index: 1000;
-}
-
-.navbar-p .logo-p img{
-    width: 70px;
-}
+/*nav bar*/
 
 /* O contêiner que controla a rolagem */
 .swiper-wrapper {
@@ -127,10 +107,13 @@ body{
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: #157A6E;
+    background-color: transparent;
     color: white;
-    padding: 10px;
+    padding: 30px;
+    border-radius: 50px;
+    border: 3px solid #157A6E;
     cursor: pointer;
+
 }
 
 .swiper-button-next .swiper-button-prev {
@@ -167,7 +150,7 @@ body{
     right: 10px;
 }
 .arrow-button img{
-    width: 50px;
+    width: 60px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -245,9 +228,11 @@ body{
 }
 
 .containerr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 80%;
-    margin: 50px;
-    margin-top: 100px;
+    margin: auto;
 }
 
 .containerr h1{
@@ -260,18 +245,17 @@ body{
     color: #FFFFFF;
     cursor: pointer;
     padding: 18px;
-    margin-top: 30px;
+    margin-top: 15px;
     width: 100%;
     border: none;
     text-align: left;
-    outline: none;
+    height: 100px;
     font-size: 24px;
-    transition: 0.4s;
     border-radius: 15px;
 }
 
-.active {
-    background-color: #157A6E;
+.accordion:hover{
+    border: 3px solid #157A6E;
 }
 
 .panel {
@@ -279,10 +263,10 @@ body{
     border-radius: 15px;
     padding: 15px 24px;
     color: #FFFFFF;
-    background-color: #D5941D;
+    background-color: #157A6E;
     display: none;
-    margin-top: 10px;
-    overflow: hidden;
+    margin-top: 15px;
+    
 }
 
 /*final section principais dúvidas*/
@@ -297,9 +281,9 @@ body{
 }
 
 .section-coment h2 {
+    margin-top: 100px;
     align-items: left;
     font-size: 64px;
-    margin-right: 950px;
     margin-bottom: 50px;
     color: #ffca28;
 }
@@ -309,7 +293,7 @@ body{
     position: relative;
     width: 90%;
     margin: 0 auto;
-    overflow: hidden; /* Esconde os elementos que saem da área visível */
+     /* Esconde os elementos que saem da área visível */
 }
 
 /* Carousel */
@@ -456,7 +440,7 @@ body{
 }
 
 h1{
-    margin-top: 200px;
+    margin-top: 120px;
 }
 
 .overlay button {
