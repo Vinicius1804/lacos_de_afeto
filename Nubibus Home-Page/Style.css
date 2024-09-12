@@ -10,7 +10,7 @@
 }
 
 .navbar{
-    width: 72%;
+    width: 77%;
     height: 70px;
     margin: auto;
     margin-top: 10px;
@@ -18,6 +18,11 @@
     border-radius: 10px;
     background-color: #1376ff;
 }
+
+.navbar a{
+    margin-right: 30px;
+}
+
 
 .row{
     margin: 0;
@@ -169,24 +174,6 @@ p{
     border-radius: 30px;
 }
 
-.nuvem {
-    position: absolute;
-    top: 700px;
-    left: 0;
-    width: 100%;
-    z-index: 10; 
-}
-.nuvem img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    transform: translateY(0); 
-    transition: transform 0.2s ease-out; 
-}
-
-
 .dropPsicologo{
     position: absolute;
     display: flex;
@@ -202,6 +189,7 @@ p{
     font-size: 1vw;
     text-align: center;
     visibility: hidden; 
+    transition: 5s all ease;
 }
 
 #camada1{
@@ -246,6 +234,330 @@ p{
 #camada2{
     border-radius: 30px;
 }
+
+/* Parte do vini */
+
+.corpo{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    background-color: #FFE5F8;
+}
+
+.titulo_info{
+    margin: auto;
+    width: 60%;
+    color: #1376FF;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container_azul{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    width: 90%;
+    margin: auto; 
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+}
+.container_azul h1{
+    font-size: 2em;
+}
+.num{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    font-size: 1.4em;
+    background-color: #1376FF;
+    padding: 30px;
+    border-radius: 24px 
+}
+
+.nuvens{
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+#nuvem1{
+    margin-top: 20px;
+    width: 510px;
+    height: 450px;
+    background-image: url(../informacoes_imagens/nuvem1_frente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+#nuvem1:hover{
+    transition: all 1s;
+    background-image: url(../informacoes_imagens/nuvem1_tras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nuvem2{
+    margin-top: 20px;
+    width: 510px;
+    height: 450px;
+    background-image: url(../informacoes_imagens/nuvem2_frente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+#nuvem2:hover{
+    
+    background-image: url(../informacoes_imagens/nuvem2_tras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+#nuvem3{
+    margin-top: 20px;
+    width: 510px;
+    height: 450px;
+    background-image: url(../informacoes_imagens/nuvem3_frente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+#nuvem3:hover{
+    background-image: url(../informacoes_imagens/nuvem3_tras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+
+
+/* PARTE DO HUGO */
+
+.section-s {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE5F8;
+}
+
+.container-s {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carouselHugo {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+    animation: slide 20s linear infinite;
+    width: calc(400px * 8); /* Ajustando a largura para comportar 8 cards de 200px cada */
+}
+
+.card {
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 90px;
+    width: 400px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.h1Hugo{
+    text-align: center;
+    color: #3a86ff;
+    font-size: 64px;
+    margin-bottom: 140px;
+}
+
+.card img {
+    width: 100%;
+    margin: 1;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: #ff79c6;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #FF69B3;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    12.5% { transform: translateX(-12.5%); }  
+    25% { transform: translateX(-25%); }
+    37.5% { transform: translateX(-37.5%); }
+    50% { transform: translateX(-50%); }
+    62.5% { transform: translateX(-37.5%); }
+    75% { transform: translateX(-25%); }
+    87.5% { transform: translateX(-12.5%); }
+    0% { transform: translateX(0); }
+}
+
+
+/* PARTE HUGO */
+
+
+section .criar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.box-pink{
+    background-color: #ff83dc;
+    width: 50%;
+    float: left;
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: 60px;
+    border-radius: 20px;
+
+}
+
+.h1hugo2 {
+    color: #1376FF;
+    font-size: 64px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.partners-container{
+    background-color: white;
+    padding: 30px;
+    height: 250px;
+}
+
+.partners-container {
+    overflow: hidden; /* Isso garante que as imagens que saem da tela não fiquem visíveis */
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apoiar{
+    padding: 0px;
+}
+
+.button{
+    padding: 20px 70px;
+    cursor: pointer;
+    transition: all 3s ease-in-out;
+}
+
+.button:hover{
+    content: url('img1/button2.svg');
+}
+
+.pessoa{
+    max-width: 40%;
+    margin-left: 20px;
+    height: 420px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+
+/* Footer Vini */
+
+footer{
+    height: auto;
+    font-family: "Nunito", sans-serif;
+    background-color: #1376FF;
+    color: white;
+}
+
+#container_footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container_footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_footer{
+    padding-top: 40px;
+    padding-bottom: 12px;    
+    font-weight: 700;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+i{
+    padding-bottom: 3px;
+    font-size: 0.5rem;
+}
+#logo_nubibos_footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.36rem;
+}
+#redes>.icones_redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#redes a{
+    margin-top: 10px;
+}
+
+.footerVini{
+   width: 30px; 
+}
+#logo_nubibos_footer{
+    padding: 15px;
+}
+
+#logo_nubibos_footer>img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#logo_nubibos_footer>p{
+    font-size: 0.6rem;
+}
+
+
 
 
 

@@ -1,7 +1,7 @@
   @font-face {
     font-family: quicksand ;
-    src: url(../login/static/Quicksand-Regular.ttf) format(truetype),
-    url(../login/static/Quicksand-VariableFont_wght.ttf) format(truetype);
+    src: url(../lacos_de_afeto/static/Quicksand-Regular.ttf) format(truetype),
+    url(../lacos_de_afeto/static/Quicksand-VariableFont_wght.ttf) format(truetype);
   }
 
 * {

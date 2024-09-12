@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+footer{
+    height: auto;
+    font-family: "Nunito", sans-serif;
+    background-color: #1376FF;
+    color: white;
+}
+
+#container_footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container_footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_footer{
+    padding-top: 40px;
+    padding-bottom: 12px;    
+    font-weight: 700;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+i{
+    padding-bottom: 3px;
+    font-size: 0.5rem;
+}
+#logo_nubibos_footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.36rem;
+}
+#redes>.icones_redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#redes a{
+    margin-top: 10px;
+
+}
+.footerVini{
+   width: 30px; 
+}
+#logo_nubibos_footer{
+    padding: 15px;
+}
+#logo_nubibos_footer>img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+#logo_nubibos_footer>p{
+    font-size: 0.6rem;
+}
+

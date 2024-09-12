@@ -8,7 +8,7 @@
 }
 
 .navbar {
-    width: 70%;
+    width: 77%;
     height: 70px;
     margin: auto;
     margin-top: 10px;
@@ -17,7 +17,6 @@
     background-color: #1376ff;
 }
 
-.navbar .navbar-expand-lg {}
 
 .row {
     margin: 0;
@@ -51,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 75px;
     padding: 5px;
     background-color: #002A64;
     border-radius: 10px;

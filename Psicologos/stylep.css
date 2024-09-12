@@ -24,7 +24,7 @@ body{
 
 /*nav bar*/
 .navbar{
-    width: 70%;
+    width: 77%;
     height: 70px;
     margin: auto;
     margin-top: 10px;
@@ -33,9 +33,10 @@ body{
     background-color: #1376ff;
 }
 
-.navbar .navbar-expand-lg{
-
+.navbar a{
+    margin-right: 40px;
 }
+
 
 .row{
     margin: 0;

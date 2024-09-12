@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 }
 
-.carousel {
+.carouselHugo {
     display: flex;
     gap: 40px;
     flex-wrap: nowrap;
