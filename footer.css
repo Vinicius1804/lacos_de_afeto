@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 footer{
     height: auto;
     font-family: "Nunito", sans-serif;
@@ -47,11 +48,21 @@ i{
     flex-direction: row;
     align-items: center;
 }
+
+.column>#svg_pag{
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    justify-content: space-between;
+}
+#svg_pag>img{
+    width: 40px;
+}
 #redes a{
     margin-top: 10px;
 
 }
-.footerVini{
+.footer-img-pag{
    width: 30px; 
 }
 #logo_nubibos_footer{
