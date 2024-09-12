@@ -17,6 +17,9 @@
     background-color: #1376ff;
 }
 
+.navbar a{
+    margin-right: 40px;
+}
 
 .row {
     margin: 0;
