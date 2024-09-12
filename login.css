@@ -1,0 +1,166 @@
+  @font-face {
+    font-family: quicksand ;
+    src: url(../login/static/Quicksand-Regular.ttf) format(truetype),
+    url(../login/static/Quicksand-VariableFont_wght.ttf) format(truetype);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: quicksand;
+    background-color: #f2f2f2f3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: quicksand;
+}
+
+
+h2 {
+    color: #1376FF;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: quicksand;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 15px;
+    color: #1376FF;
+    font-family: quicksand;
+    font-weight:bold;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #E7E7E7;
+    font-family: quicksand;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #1376FF;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-family: quicksand;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #1376FF;
+    font-family: quicksand;
+}
+
+.forgot-password {
+    color: #9D9D9D;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    font-family: quicksand;
+}
+
+.separator {
+    text-align: center;
+    color: #9D9D9D;
+    font-size: 12px;
+    margin: 1px;
+    position: relative;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #9D9D9D;
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 1px;
+    color: #9D9D9D;
+    font-family: quicksand;
+}
+
+.social-login img {
+    width: 20px;
+    margin-right: 10px;
+    font-family: quicksand;
+    font-weight: bold;
+}
+
+.google {
+    background-color: #E7E7E7;
+}
+
+.facebook {
+    background-color: #E7E7E7;
+}
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.kids-image {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
