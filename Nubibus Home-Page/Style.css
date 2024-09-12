@@ -121,7 +121,6 @@ p{
 }
 
 
-
 #gratis:hover {
 
     width: 310px;
@@ -428,11 +427,13 @@ p{
 
 
 section .criar{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    background-color: #FFE5F8;
 }
 
 .box-pink{
